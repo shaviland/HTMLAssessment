@@ -46,3 +46,7 @@ background-size: contain;
 #teamRoster li li li:first-child {
   font-weight: bold;
 }
+
+tfoot, tbody tr:nth-child(odd){
+  background-color: #e5ffbd;
+}
