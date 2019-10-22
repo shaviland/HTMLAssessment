@@ -20,18 +20,19 @@
       <table>
         <thead>
           <tr>
-            <th colspan="2"><strong>Team Name</strong> </th>
-            <th rowspan="2"><strong>First Half</strong></th>
-            <th rowspan="2"><strong>Second Half</strong></th>
+            <th colspan="2">Team Name</th>
+            <th rowspan="2">First Half</th>
+            <th rowspan="2">Second Half</th>
+            <th rowspan="2">Final</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td></td>
-            <td><strong>Q1</strong></td>
-            <td><strong>Q2</strong></td>
-            <td><strong>Q3</strong></td>
-            <td><strong>Q4</strong></td>
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th>Q4</th>
           </tr>
         </tbody>
         <tbody>
@@ -41,6 +42,7 @@
             <td>3</td>
             <td>0</td>
             <td>7</td>
+            <td>2</td>
           </tr>
           <tr>
             <td>Chigago</td>
@@ -48,13 +50,87 @@
             <td>3</td>
             <td>0</td>
             <td>3</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <th>Total</th>
+            <th>12</th>
+            <th>6</th>
+            <th>0</th>
+            <th>10</th>
+            <th>11</th>
           </tr>
         </tbody>
-
-
       </table>
-
     </div>
-    <h2>FORM</h2>
+
+    <h2>LIST</h2>
+    <div id="sportsList">
+      <ul>
+        <li><a href="https://www.denverbroncos.com"><img src="https://static.www.nfl.com/image/private/t_q-best/league/t0p7m5cjdjy18rnzzqbx" width="28" height="28"/>   Denver Broncos</a>
+          <ul>
+            <li>QB
+              <ul>
+                <li>Brandon Allen</li>
+                <li>Joe Flacco</li>
+              </ul>
+            </li>
+            <li>T
+              <ul>
+                <li>Calvin Anderson</li>
+                <li>Garett Bolles</li>
+                <li>Ja'Wuan James</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="https://www.chicagobears.com/fan-zone/bears100"><img src="https://static.www.nfl.com/image/private/t_q-best/league/ra0poq2ivwyahbaq86d2" width="28" height="28"/>   Chicago Bears</a>
+          <ul>
+            <li>QB
+              <ul>
+                <li>Chase Daniel</li>
+                <li>Mitchell Trubisky</li>
+              </ul>
+            </li>
+            <li>TE
+              <ul>
+                <li>Ben Braunecker</li>
+                <li>Trey Burton</li>
+                <li>J.P. Holtz</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </body>
+
+  <h2>FORM</h2>
+  <div id="sportsForm">
+    <form action="">
+      First Name:
+      <input type="text" name="firstName" value="" placeholder="First Name">
+      Last Name:
+      <input type="text" name="lastName" value="" placeholder="Last Name"><br>
+      Favorite Sport:<br>
+      <select name="favSport">
+        <option value="Soccar"> Soccar</option>
+        <option value="Football">Football</option>
+        <option value="Tennis">Tennis</option>
+      </select><br>
+      I have:
+      <input type="checkbox" name="" value="attended">Attended
+      <input type="checkbox" name="" value="played">Played
+      <input type="checkbox" name="" value="coached">Coached
+      <input type="checkbox" name="" value="betOn">Bet On <br>
+      For this sport I prefer the:
+      <input type="radio" name="level" value="amateur">Amateur
+      <input type="radio" name="level" value="college">College
+      <input type="radio" name="level" value="professional">Professional
+      <br>
+      <button type="button" name="button">Submit Query</button>
+    </form>
+  </div>
 </html>
